@@ -1,0 +1,28 @@
+
+<section class="pricing">
+  <div class= "card mb-5 mb-lg-0">
+    <div class="card-body">
+      <h5 class="card-title text-muted text-uppercase text-center" style="font-size: 15px;">{{mcards.tag}}</h5>
+      <h6 class="card-price text-center" style="font-size: 40px; font-weight: bolder;">{{mcards.title}}<span
+          class="period" style="font-size: xx-small;">/month</span></h6>
+      <hr>
+      <ul class="fa-ul" style="list-style-type:symbols(); line-height: 2.5em;">
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{{mcards.number}}</li>
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{{mcards.memory}}</li>
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{{mcards.publicprojects}}</li>
+        <li><span class="fa-li"><i class="fas fa-check"></i></span>{{mcards.access}}</li>
+        <li [ngClass]="{'text-muted': !mcards.privateprojects.available}"><span class="fa-li"><i
+              class="fas fa-times"></i></span>{{mcards.privateprojects.pp}}</li>
+        <li [ngClass]="{'text-muted': !mcards.support.available}"><span class="fa-li"><i
+              class="fas fa-times"></i></span>{{mcards.support.sup}}</li>
+        <li [ngClass]="{'text-muted': !mcards.domains.available}"><span class="fa-li"><i
+              class="fas fa-times"></i></span>{{mcards.domains.dom}}</li>
+        <li [ngClass]="{'text-muted': !mcards.reports.available}"><span class="fa-li"><i
+              class="fas fa-times"></i></span>{{mcards.reports.rep}}</li>
+      </ul>
+      <div class="d-grid">
+        <a href="#" class="btn btn-primary text-uppercase" style="border-radius: 50px;">Button</a>
+      </div>
+    </div>
+  </div>
+</section>
