@@ -1,18 +1,27 @@
-@media (min-width: 992px) {
-    .outline{
-        background-color: rgba(26, 91, 230, 0.966);
-        margin: 10px;
-        padding-top: 20px;
-        padding-bottom: 100px;
-    }
-    .row{
-      border-radius: 500px;
-    }
-
-    .row :hover {
-      margin-top: -.25rem;
-      margin-bottom: .25rem;
-      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-    }
+.main{
+  border: 2px solid red;
+  background-color: rgb(56, 194, 56);
 }
+
+.outline{
+  width: 40%;
+  padding-top: 30px ;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  margin-left: 300px;
+  margin-right: 100px;
+  margin-top: 150px;
+  margin-bottom: 200px;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  border: 1px solid green;
+  border-radius: 15px;
+  color: green;
   
+}
+
+button{
+  background-color: rgb(56, 194, 56);
+  color: white;
+}

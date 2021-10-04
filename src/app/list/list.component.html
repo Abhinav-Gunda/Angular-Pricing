@@ -1,0 +1,11 @@
+
+<div class="main">
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+           <div class="ms-2 me-auto">
+              <div [ngClass]="{'text-muted': mydata.status}" class="fw-bold" style="color: rgb(56, 194, 56);">{{mydata.title}}</div>
+            </div>
+          <button class="badge bg-success rounded-pill" id="del" (click)="cut()" >x</button>
+        </li>
+    </ol>
+</div>

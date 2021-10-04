@@ -1,0 +1,22 @@
+<style>
+    .main{
+        color: green;
+    }
+    button{
+        background-color: rgb(56, 194, 56);
+        color: white;
+    }
+</style>
+
+<div class="main" >
+    <div class="d-flex justify-content-between">
+        <div>
+            <input type="text" [(ngModel)]="textvalue" name="Enter task" id="f" required size="40" maxlength="30" >
+        </div>
+
+        <div>
+            <button (click)=passdata() (click)="triggerEvent(listValue)"> ADD TASK</button>
+        </div>
+    </div>  
+    <hr>
+</div>

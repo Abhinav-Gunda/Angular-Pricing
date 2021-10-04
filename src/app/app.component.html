@@ -1,11 +1,23 @@
 <link rel="stylesheet" href="app.component.css">
 
-<div class="outline">
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-lg-4" *ngFor="let card of cards">
-                <app-pricing [mcards]="card">
-                </app-pricing>
+<div class="main">
+    <div class="outline">
+        <div class="row ">
+            <div class="col-lg-10 justify-content-between">
+                <app-task (addCartEvent)="addData($event)"></app-task>
+            </div>
+
+            <div class="col-lg-10">
+                <div *ngFor="let list of listItems">
+                    <app-list [mydata]="list"></app-list>
+                </div>
+                <h2></h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10">
+                    <div><button (click)="clear()"> CLEAR COMPLETED TASK</button></div>
+                </div>
             </div>
         </div>
     </div>
